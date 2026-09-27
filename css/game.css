@@ -206,3 +206,8 @@ html.mobile-game:not(.portrait-mobile) .menu .primary{
   font-size:clamp(8px,1.7vh,11px);
   flex:0 0 auto;
 }
+
+/* Som — adicionado somente para a nova reta final. */
+.sound-toggle{position:absolute;z-index:20;right:18px;top:18px;padding:10px 12px;border:2px solid var(--line);background:#06101fe8;color:#dff6ff;font:inherit;font-size:8px;cursor:pointer;box-shadow:4px 4px 0 #0008,0 0 18px #46c8ff22}
+.sound-toggle:hover{background:#101c2e}.sound-toggle:active{transform:translateY(2px)}.sound-toggle[hidden]{display:none}
+html.mobile-game .sound-toggle{right:18px;top:18px;font-size:8px;padding:10px 12px}
