@@ -1,0 +1,13 @@
+CHECKPOINT — 26/09/2026
+
+Quadros fechados neste build:
+1. Prólogo — Adamantina
+2. Prólogo — Box Curumim
+3. 06 de Junho — Um Story
+4. 06 de Junho — Uma Resposta
+5. 06 de Junho — A Primeira Conversa
+6. Junho → Julho — Quase um mês de conversa
+7. Junho → Julho — Cada vez mais presentes
+
+Regra visual: cards, narração, progresso e interface pertencem ao código. As artes são usadas como cena.
+Próximo trecho a desenvolver: 08 de julho.

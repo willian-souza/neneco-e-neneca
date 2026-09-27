@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{--bg:#030817;--panel:#07111feF;--line:#46c8ff;--gold:#ffd34d;--pink:#ff4e91;--text:#f6f8ff}
+*{box-sizing:border-box} html,body{margin:0;width:100%;height:100%;background:#020611;color:var(--text);overflow:hidden} body{font-family:'Press Start 2P',monospace}
+#game,.screen{width:100%;height:100%}.screen{display:none}.screen.active{display:grid}
+.menu{place-items:center;background:radial-gradient(circle at 50% 25%,#25305c 0,#0b1027 35%,#030817 75%)}
+.menu:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#020611),repeating-linear-gradient(90deg,transparent 0 95px,#ffffff05 96px);pointer-events:none}
+.menu-card{position:relative;text-align:center;width:min(860px,90vw);padding:54px 28px}.eyebrow{font-size:10px;color:var(--line);letter-spacing:2px}.menu h1{font-size:clamp(30px,6vw,68px);line-height:1.2;margin:24px 0 18px;color:var(--gold);text-shadow:5px 5px 0 #401b44}.menu h1 i{color:var(--pink);font-style:normal}.menu p{font-size:clamp(9px,1.5vw,13px);line-height:2;color:#d5def4}.primary{margin-top:28px;padding:18px 30px;border:2px solid #fff;background:var(--pink);color:white;font:inherit;cursor:pointer;box-shadow:0 0 0 4px #ff4e9133}.primary:active{transform:translateY(2px)}
+.story{place-items:center;background:#020611;padding:12px}.stage{position:relative;width:min(1100px,96vw);aspect-ratio:16/9;background:#061020;border:2px solid #111c35;overflow:hidden;display:grid;grid-template-rows:1fr auto;box-shadow:0 24px 80px #000}
+.art-frame{position:relative;min-height:0;background:#08101f;overflow:hidden}.art-frame img{width:100%;height:100%;object-fit:contain;image-rendering:auto;display:block;background:#050b18}.vignette{position:absolute;inset:0;box-shadow:inset 0 0 70px #0009;pointer-events:none}
+.chapter-hud{position:absolute;z-index:4;top:18px;left:18px;min-width:300px;max-width:58%;padding:14px 16px;background:#06101eea;border:2px solid var(--line);box-shadow:4px 4px 0 #0007;display:grid;gap:7px}.chapter-hud span{font-size:9px;color:#fff}.chapter-hud strong{font-size:15px;color:var(--gold)}.chapter-hud small{font-size:8px;color:#c8d4ec}
+.narration{position:relative;z-index:5;min-height:118px;padding:22px 58px 22px 28px;background:#06101ef7;border-top:2px solid var(--line);display:flex;align-items:center}.narration p{margin:0;font-size:clamp(9px,1.15vw,13px);line-height:1.85;max-width:92%}.next{position:absolute;right:24px;bottom:20px;color:var(--gold);animation:bob 1s steps(2,end) infinite}.tap{position:absolute;z-index:7;bottom:8px;left:50%;transform:translateX(-50%);font-size:6px;color:#9edcff}.progress{position:absolute;z-index:8;bottom:0;left:0;right:0;height:3px;background:#0b1a31}.progress span{display:block;height:100%;background:var(--pink);transition:width .3s ease}
+.stage.fade .art-frame img{animation:fade .42s ease}.stage.fade .narration p{animation:textin .38s ease}
+@keyframes fade{from{opacity:.2;transform:scale(1.01)}to{opacity:1;transform:none}}@keyframes textin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@keyframes bob{50%{transform:translateY(4px)}}
+@media(max-width:700px){.stage{width:100vw;height:100svh;aspect-ratio:auto;border:0}.story{padding:0}.chapter-hud{top:12px;left:12px;min-width:0;width:72%;padding:10px}.chapter-hud strong{font-size:12px}.narration{min-height:128px;padding:18px 42px 24px 18px}.narration p{font-size:9px}.tap{bottom:7px}}
+.chapter-hud.hidden{display:none}
+
+/* Build 3 — cena 06/06 aprovada */
+.stage.cinematic #sceneArt { object-fit: cover; object-position: center; }
+.stage.cinematic .chapter-hud { opacity: .94; }
+.stage.cinematic.focus-conversation #sceneArt { transform: scale(1.025); transform-origin: 50% 44%; }
+.stage.cinematic.focus-soft #sceneArt { transform: scale(1.015); transform-origin: 50% 50%; filter: saturate(.92) brightness(.88); }
+
+/* Build 4 — a narração pertence ao jogo, nunca à arte. */
+.stage.clean-art .art-frame { overflow:hidden; }
+.stage.clean-art #sceneArt {
+  width:100%;
+  height:137%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center top;
+  transform:none;
+}
+.stage.clean-art.focus-conversation #sceneArt { transform:scale(1.035); transform-origin:50% 28%; }
+.stage.clean-art.focus-soft #sceneArt { transform:scale(1.02); transform-origin:50% 30%; filter:saturate(.94) brightness(.9); }
+.stage.clean-art.focus-month #sceneArt { transform:scale(1.075); transform-origin:50% 24%; filter:saturate(.9) brightness(.82); }
+.stage.clean-art.focus-month2 #sceneArt { transform:scale(1.11); transform-origin:50% 26%; filter:saturate(.88) brightness(.78); }
+.stage.clean-art.focus-invite #sceneArt { transform:scale(1.045); transform-origin:50% 24%; filter:saturate(.92) brightness(.72); }
+
+/* Build 5 — 09/07. Mantém a linguagem visual aprovada e a narração fora da arte. */
+.stage.clean-art.focus-car #sceneArt{transform:scale(1.02);transform-origin:50% 31%;filter:saturate(.96) brightness(.92)}
+.stage.clean-art.focus-car2 #sceneArt{transform:scale(1.055);transform-origin:58% 34%;filter:saturate(.92) brightness(.86)}
+.stage.clean-art.focus-arrival #sceneArt{transform:scale(1.085);transform-origin:50% 27%;filter:saturate(.9) brightness(.8)}
+/* Build 6 — artes narrativas aprovadas: a imagem muda a cada 1–2 caixas. */
+.stage #sceneArt{width:100%;height:100%;object-fit:contain;object-position:center;transform:none!important;filter:none!important;background:#050b18}
+/* Build 7 — preserva o enquadramento completo das artes aprovadas.
+   O card de capítulo não é sobreposto nas cenas 06/06 e 09/07; essas artes já trazem o card visual. */
+
+/* Build 8 — card do capítulo pertence ao código em TODOS os capítulos.
+   Ele cobre o card que veio desenhado nas artes, evitando duplicação.
+   As imagens continuam em contain: sem zoom, sem cover e sem cortes pelo CSS. */
+.chapter-hud{
+  display:grid;
+  z-index:10;
+  top:18px;
+  left:18px;
+  min-width:330px;
+  max-width:48%;
+  background:#06101f;
+  opacity:1!important;
+}
+.chapter-hud.hidden{display:none}
+.stage #sceneArt{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  transform:none!important;
+  filter:none!important;
+  background:#050b18;
+}
+
+/* Build 9 — padrão definitivo: arte limpa + card/narração no código. */
+.stage #sceneArt{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  transform:none!important;
+  filter:none!important;
+  background:#050b18;
+}
+/* O story original é vertical e deve aparecer inteiro, sem crop. */
+.stage.story-portrait .art-frame{
+  background:radial-gradient(circle at 50% 45%,#16203b 0,#070d1b 58%,#030817 100%);
+}
+.stage.story-portrait #sceneArt{
+  object-fit:contain;
+  padding:10px 0;
+}
+
+/* Checkpoint 26/09 — artes NOVAS aprovadas até 08/07.
+   O HUD/narração permanecem no HTML; a arte gerada é enquadrada para que a faixa inferior embutida não seja reutilizada. */
+.stage.approved-art .art-frame{overflow:hidden;background:#050b18}
+.stage.approved-art #sceneArt{width:100%;height:100%;object-fit:cover;object-position:center 23%;transform:none!important;filter:none!important}
+.stage.approved-art .chapter-hud{display:grid!important}
+
+/* Capítulo O Nosso Lugar — interação da flor. */
+.scene-action{position:absolute;z-index:12;left:50%;bottom:132px;transform:translateX(-50%);padding:13px 18px;border:2px solid var(--gold);background:#06101ff2;color:var(--gold);font:inherit;font-size:9px;cursor:pointer;box-shadow:4px 4px 0 #0008,0 0 18px #ffd34d22}
+.scene-action:hover{background:#101c2e}.scene-action:active{transform:translate(-50%,2px)}
+.scene-action[hidden]{display:none}
+@media(max-width:700px){.scene-action{bottom:142px;font-size:8px;padding:11px 13px}}
+
+/* Capítulo Pequenos Momentos — escolhas interativas */
+.scene-choices{position:absolute;z-index:13;left:50%;bottom:132px;transform:translateX(-50%);display:flex;gap:12px;justify-content:center;width:min(92%,620px)}
+.scene-choices[hidden]{display:none}
+.scene-choices button{padding:13px 16px;border:2px solid var(--gold);background:#06101ff2;color:var(--gold);font:inherit;font-size:8px;cursor:pointer;box-shadow:4px 4px 0 #0008,0 0 18px #ffd34d22}
+.scene-choices button:hover{background:#101c2e}.scene-choices button:active{transform:translateY(2px)}
+@media(max-width:700px){.scene-choices{bottom:145px;gap:8px}.scene-choices button{font-size:7px;padding:10px 9px}}
+
+/* Capítulo 65 KM — HUD de viagem e obstáculos simbólicos, sempre renderizados pelo código. */
+.journey-hud{position:absolute;z-index:11;right:22px;top:22px;padding:12px 16px;border:2px solid var(--gold);background:#06101fe8;color:var(--gold);font-size:11px;box-shadow:4px 4px 0 #0008,0 0 22px #ffd34d20;text-align:center}
+.journey-hud[hidden]{display:none}
+.obstacle-word{position:absolute;z-index:9;left:50%;top:50%;transform:translate(-50%,-50%);font-size:clamp(24px,5vw,56px);color:#fff;text-shadow:4px 4px 0 #000,0 0 26px #ff4e9199;letter-spacing:3px;pointer-events:none;animation:obstacleIn .45s ease}
+.obstacle-word[hidden]{display:none}
+@keyframes obstacleIn{from{opacity:0;transform:translate(-50%,-45%) scale(.92)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(max-width:700px){.journey-hud{right:12px;top:12px;font-size:8px;padding:9px 10px}.obstacle-word{font-size:clamp(18px,8vw,34px)}}
+
+
+/* Capítulo Castelo + Final — inventário da flor, sempre em código. */
+.inventory-hud{position:absolute;z-index:14;right:22px;bottom:136px;padding:10px 14px;border:2px solid var(--gold);background:#06101fe8;color:var(--gold);font-size:10px;box-shadow:4px 4px 0 #0008,0 0 22px #ffd34d22}
+.inventory-hud[hidden]{display:none}
+@media(max-width:700px){.inventory-hud{right:12px;bottom:148px;font-size:8px;padding:8px 10px}}

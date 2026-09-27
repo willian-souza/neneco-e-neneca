@@ -1,0 +1,18 @@
+CHECKPOINT VISUAL APROVADO — ATÉ 08 DE JULHO
+
+Sequência ativa no jogo:
+1. Prólogo — Adamantina (mantida do projeto-base)
+2. Prólogo — Box Curumim (NOVA arte aprovada: personagens atualizados)
+3. 06 de junho — Um Story (NOVA arte aprovada; card no código: 06 DE JUNHO / UM STORY / UMA PERGUNTA SIMPLES.)
+4. Junho → Julho — quase um mês de conversa (NOVA arte)
+5. 08 de julho — O convite (NOVA arte; narração em terceira pessoa)
+
+Regras visuais consolidadas:
+- Neneco: cabelo bem curtinho, sem boné, tatuagens e plugs.
+- Neneca: traços baseados nas fotos reais, estilo desenho/game, roupas pretas/brancas.
+- Curumim/logo: somente no prólogo do Curumim.
+- Sem cachorro.
+- Narração sempre em terceira pessoa.
+- Não inventar acontecimentos ou conversas fora do que foi informado.
+
+Os arquivos antigos do build original continuam preservados em assets/, mas não entram na sequência ativa deste checkpoint.

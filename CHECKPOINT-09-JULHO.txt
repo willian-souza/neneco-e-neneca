@@ -1,0 +1,22 @@
+CHECKPOINT OFICIAL — 26/09/2026
+
+Base preservada: checkpoint aprovado até 08/07.
+Adicionado o bloco aprovado de 08/07 (convite) + manhã de 09/07.
+
+Novas artes integradas:
+1. 08-convite-aprovado.png
+2. 09-01-primeiro-encontro-aprovado.png
+3. 09-02-caminho-caldeira-aprovado.png
+4. 09-03-caldeira-chegada-aprovado.png
+5. 09-04-alongamento-aprovado.png
+6. 09-05-corrida-aprovado.png
+7. 09-06-conversa-banco-aprovado.png
+8. 09-07-via-sabor-aprovado.png
+9. 09-08-volta-carro-branco-aprovado.png
+10. 09-09-coragem-carro-aprovado.png
+11. 09-10-primeiro-beijo-aprovado.png
+
+A cena “Memória Desbloqueada — Primeiro Beijo” reutiliza a arte 09-10, conforme aprovado.
+A transição “Próximo Capítulo — O Nosso Lugar” reutiliza a arte do Parque Caldeira e é conduzida pelo card/narração no código.
+
+Via Sabor: narração inclui os quatro pacotinhos de açúcar do Neneco.

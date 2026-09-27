@@ -1,0 +1,8 @@
+CHECKPOINT 7 QUADROS - CORRIGIDO
+
+Alterados somente:
+1/5 - Um Story: versão final aprovada, com selfie ilustrada da Neneca no Story.
+3/5 - A Primeira Conversa: versão final aprovada com diálogo ajustado.
+4/5 - Quase um mês de conversa: versão final limpa do Neneco, sem diálogo na arte.
+
+Mantidos sem alteração: Adamantina, Curumim, 2/5, 5/5, cards, narrações e estrutura do código.
