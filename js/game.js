@@ -463,3 +463,31 @@ function next(){
 document.querySelector('#startBtn').addEventListener('click',()=>{menu.classList.remove('active');story.classList.add('active');index=0;render(0)});
 story.addEventListener('click',next);
 story.addEventListener('keydown',e=>{if(['Enter',' ','ArrowRight'].includes(e.key)){e.preventDefault();next()}});
+
+
+// Mobile: preserva o jogo como um palco 16:9 e escala o conjunto inteiro.
+(function setupMobileLandscape(){
+  const root=document.documentElement;
+  const DESIGN_W=1100, DESIGN_H=618.75;
+  const coarse=window.matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints>0;
+  if(!coarse) return;
+  root.classList.add('mobile-game');
+
+  function fitMobileStage(){
+    const portrait=window.innerHeight>window.innerWidth;
+    root.classList.toggle('portrait-mobile',portrait);
+    const vv=window.visualViewport;
+    const vw=vv ? vv.width : window.innerWidth;
+    const vh=vv ? vv.height : window.innerHeight;
+    // Pequena margem impede que controles do navegador encostem no jogo.
+    const scale=Math.min((vw-8)/DESIGN_W,(vh-8)/DESIGN_H,1);
+    root.style.setProperty('--mobile-scale',String(Math.max(.1,scale)));
+  }
+
+  fitMobileStage();
+  window.addEventListener('resize',fitMobileStage,{passive:true});
+  window.addEventListener('orientationchange',()=>setTimeout(fitMobileStage,120),{passive:true});
+  if(window.visualViewport){
+    window.visualViewport.addEventListener('resize',fitMobileStage,{passive:true});
+  }
+})();
