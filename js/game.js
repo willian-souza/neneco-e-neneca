@@ -439,8 +439,33 @@ actionBtn.addEventListener('click',e=>{e.stopPropagation(); if(locked)return; co
 function choose(value){
   corEsmalte=value; actionRequired=false; choicesBox.hidden=true; next();
 }
-function render(i){
-  const s=scenes[i]; locked=true; stage.className='stage'; void stage.offsetWidth;
+// Cache de imagens: baixa e decodifica as artes antes de exibir a cena.
+const imageCache=new Map();
+function preloadImage(src){
+  if(imageCache.has(src)) return imageCache.get(src);
+  const promise=new Promise(resolve=>{
+    const img=new Image();
+    img.onload=async()=>{
+      try{ if(img.decode) await img.decode(); }catch(_e){}
+      resolve(img);
+    };
+    img.onerror=()=>resolve(img); // não trava o jogo se algum asset falhar
+    img.src=src;
+  });
+  imageCache.set(src,promise);
+  return promise;
+}
+function warmNextImages(from,count=5){
+  for(let n=from;n<Math.min(scenes.length,from+count);n++) preloadImage(scenes[n].art);
+}
+
+let renderToken=0;
+async function render(i){
+  const s=scenes[i]; const token=++renderToken; locked=true;
+  // A cena só troca quando a nova arte já estiver pronta. Assim card/texto/imagem entram juntos.
+  await preloadImage(s.art);
+  if(token!==renderToken) return;
+  stage.className='stage'; void stage.offsetWidth;
   label.textContent=s.label; title.textContent=s.title; subtitle.textContent=s.subtitle;
   narration.textContent=s.text.replace('{corEsmalte}',corEsmalte ? corEsmalte.toUpperCase() : 'BRANCO / MARROM-NUDE');
   art.src=s.art; art.alt=`${s.label} — ${s.title}`; hud.classList.remove('hidden');
@@ -454,13 +479,22 @@ function render(i){
     s.choices.forEach(c=>{const b=document.createElement('button');b.type='button';b.textContent=c.label;b.addEventListener('click',e=>{e.stopPropagation();if(!locked)choose(c.value)});choicesBox.appendChild(b)});
   }
   tap.textContent=actionRequired?(s.choices?'ESCOLHA UMA COR':'ESCOLHA UMA AÇÃO'):'TOQUE PARA CONTINUAR';
-  progress.style.width=`${((i+1)/scenes.length)*100}%`; stage.classList.add('fade'); setTimeout(()=>locked=false,280);
+  progress.style.width=`${((i+1)/scenes.length)*100}%`; stage.classList.add('fade');
+  // Enquanto a pessoa lê esta cena, prepara as próximas em segundo plano.
+  warmNextImages(i+1,5);
+  setTimeout(()=>locked=false,280);
 }
 function next(){
   if(locked||actionRequired)return;
   if(index<scenes.length-1){index++;render(index);return;}
 }
-document.querySelector('#startBtn').addEventListener('click',()=>{menu.classList.remove('active');story.classList.add('active');index=0;render(0)});
+document.querySelector('#startBtn').addEventListener('click',async()=>{
+  locked=true;
+  await preloadImage(scenes[0].art);
+  menu.classList.remove('active'); story.classList.add('active'); index=0; render(0);
+});
+// Já na tela de abertura, prepara o começo da história sem esperar o jogador clicar.
+warmNextImages(0,6);
 story.addEventListener('click',next);
 story.addEventListener('keydown',e=>{if(['Enter',' ','ArrowRight'].includes(e.key)){e.preventDefault();next()}});
 
