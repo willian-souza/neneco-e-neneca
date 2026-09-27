@@ -17,7 +17,7 @@ const scenes = [
   {
     label:'06 DE JUNHO', title:'UMA RESPOSTA', subtitle:'E FOI ASSIM QUE COMEÇOU.',
     art:'assets/06-02-uma-resposta-aprovado.png',
-    text:'Neneco respondeu que escolheria a corrida. Ela concordou — e logo puxou assunto. Assim começou a primeira conversa entre os dois.'
+    text:'Neneco respondeu que escolheria a corrida. Ela concordou e logo puxou assunto. Assim começou a primeira conversa entre os dois.'
   },
   {
     label:'06 DE JUNHO', title:'A PRIMEIRA CONVERSA', subtitle:'SEM PRESSA. SEM FLERTE.',
@@ -47,7 +47,7 @@ const scenes = [
   {
     label:'09 DE JULHO · 06:00', title:'O PRIMEIRO ENCONTRO', subtitle:'UMA MANHÃ BEM FRIA.',
     art:'assets/09-01-primeiro-encontro-aprovado.png',
-    text:'Às 06:00, em uma manhã bem fria, Neneco foi buscá-la na casa dela com o carro branco do pai. Era a primeira vez que os dois saíam juntos.'
+    text:'Às 06:00, em uma manhã bem fria, Neneco foi buscá-la na casa dela de carro. Era a primeira vez que os dois saíam juntos.'
   },
   {
     label:'09 DE JULHO', title:'A CAMINHO DO PARQUE', subtitle:'PARQUE CALDEIRA.',
@@ -403,7 +403,7 @@ const scenes = [
   {
     label:'UMA NOVA FASE', title:'NENECA…', subtitle:'❤️',
     art:'assets/14-04-pedido-flor.png',
-    text:'Porque algumas coisas pequenas… acabam significando muito. Neneca… quer ser minha namorada? ❤️',
+    text:'Porque algumas coisas pequenas… acabam significando muito. Neneca… quer namorar comigo? ❤️',
     action:'SIM ❤️', isYes:true
   },
   {
