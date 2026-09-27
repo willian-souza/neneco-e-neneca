@@ -3,161 +3,161 @@ const scenes = [
     label:'PRÓLOGO', title:'ADAMANTINA', subtitle:'DE ONDE TUDO COMEÇOU...',
     art:'assets/adamantina.png',
     music:'prologo',
-    text:'Antes de qualquer conversa, antes de qualquer mensagem... a história já passava pelos mesmos lugares, mesmo sem eles perceberem.'
+    text:'Antes de qualquer conversa, antes de qualquer mensagem... os caminhos deles já se cruzavam, mesmo sem que percebessem.'
   },
   {
     label:'PRÓLOGO', title:'BOX CURUMIM', subtitle:'MESMO LUGAR. ROTINAS DIFERENTES.',
     art:'assets/quadro-02-curumim-aprovado.png',
     music:'prologo',
-    text:'Eles já tinham se visto algumas vezes. Mas nunca tinham realmente conversado.'
+    text:'Eles já tinham se visto algumas vezes. Rostos conhecidos... mas ainda eram dois desconhecidos.'
   },
   {
     label:'ANTES DA PRIMEIRA CONVERSA', title:'UMA NOTIFICAÇÃO', subtitle:'ATÉ QUE UM DIA...',
     art:'assets/05-01-notificacao-seguir.png',
     music:'instagram',
-    text:'Por um tempo, foi só isso. Dois rostos conhecidos no mesmo lugar. Até que um dia... uma notificação apareceu no celular do Neneco.'
+    text:'Por um tempo, foi só isso. Dois rostos conhecidos que vez ou outra se cruzavam. Até que, um dia... algo mudou.'
   },
   {
     label:'ANTES DA PRIMEIRA CONVERSA', title:'UM ROSTO CONHECIDO', subtitle:'ERA A NENECA.',
     art:'assets/05-02-perfil-neneca.png',
     music:'instagram',
-    text:'Neneco conhecia aquele rosto. Era a menina que ele já tinha visto algumas vezes no Curumim.',
+    text:'Aquele rosto não era estranho. Era a menina que Neneco já tinha visto algumas vezes no Curumim.',
     action:'SEGUIR DE VOLTA ❤️'
   },
   {
     label:'ANTES DA PRIMEIRA CONVERSA', title:'UMA CURTIDA AQUI...', subtitle:'MAS AINDA SEM CONVERSA.',
     art:'assets/05-03-curtida-neneco.png',
     music:'instagram',
-    text:'Mas nenhuma mensagem veio. Por um tempo, eles ficaram assim. Uma curtida aqui...'
+    text:'Por enquanto, nenhuma conversa. Eles ficaram assim por um tempo... uma curtida aqui...'
   },
   {
     label:'ANTES DA PRIMEIRA CONVERSA', title:'...OUTRA ALI', subtitle:'AOS POUCOS, UM APARECIA NA ROTINA DO OUTRO.',
     art:'assets/05-04-curtida-neneca.png',
     music:'instagram',
-    text:'Outra ali. Sem conversa. Só dois desconhecidos aparecendo, aos poucos, na rotina um do outro. Até que uma postagem mudou isso.'
+    text:'...outra ali. Sem conversa. Só dois desconhecidos aparecendo, aos poucos, na rotina um do outro. Até que uma postagem mudou isso.'
   },
   {
     label:'06 DE JUNHO', title:'UM STORY', subtitle:'UMA PERGUNTA SIMPLES.',
     art:'assets/06-01-um-story-aprovado.png',
     music:'instagram',
-    text:'No dia 06 de junho, a Neneca postou um story com uma pergunta simples: “Corrida ou show?”.'
+    text:'No dia 06 de junho, Neneca postou um story. Uma pergunta simples, sem imaginar onde aquela resposta iria levar: "Corrida ou show?"'
   },
   {
     label:'06 DE JUNHO', title:'UMA RESPOSTA', subtitle:'E FOI ASSIM QUE COMEÇOU.',
     art:'assets/06-02-uma-resposta-aprovado.png',
     music:'instagram',
-    text:'Neneco respondeu que escolheria a corrida. Ela concordou — e logo puxou assunto. Assim começou a primeira conversa entre os dois.'
+    text:'Neneco não pensou muito: corrida. Neneca concordou. E o que parecia ser só uma resposta a um story acabou virando a primeira conversa dos dois.'
   },
   {
     label:'06 DE JUNHO', title:'A PRIMEIRA CONVERSA', subtitle:'SEM PRESSA. SEM FLERTE.',
     art:'assets/06-03-primeira-conversa-aprovado.png',
     music:'instagram',
-    text:'No começo, não tinha flerte. Eram duas pessoas que finalmente estavam se conhecendo e descobrindo coisas em comum.'
+    text:'No começo, não tinha flerte. Eram só duas pessoas começando a se conhecer e descobrindo, aos poucos, o quanto tinham em comum.'
   },
   {
     label:'JUNHO → JULHO', title:'QUASE UM MÊS DE CONVERSA', subtitle:'A ROTINA FOI APROXIMANDO OS DOIS.',
     art:'assets/06-04-quase-um-mes-aprovado.png',
     music:'instagram',
-    text:'Corrida, treinos, alimentação, rotina... assunto não faltava. E, aos poucos, a conversa foi ficando cada vez mais natural.'
+    text:'Corrida, treinos, alimentação, rotina... assunto não faltava. Quanto mais conversavam, mais coisas em comum apareciam. E tudo foi ficando cada vez mais natural.'
   },
   {
     label:'JUNHO → JULHO', title:'CADA VEZ MAIS PRESENTES', subtitle:'REELS, BOBEIRAS E RISADAS.',
     art:'assets/06-05-cada-vez-mais-presentes-aprovado.png',
     music:'instagram',
-    text:'Vieram os reels, as bobeiras e as risadas. Sem perceber, um começou a fazer parte do dia do outro.'
+    text:'Vieram os reels, as bobeiras e as risadas. E, sem perceber, eles começaram a fazer parte da rotina um do outro.'
   },
   {
     label:'08 DE JULHO', title:'CONTINUA...', subtitle:'O PRÓXIMO PASSO AINDA ESTAVA POR VIR.',
     art:'assets/08-julho-continua-aprovado.png',
     music:'instagram',
-    text:'Depois de quase um mês de conversa, a história estava prestes a sair da tela do celular.'
+    text:'Depois de quase um mês entre mensagens, risadas e conversas... aquela história estava prestes a sair da tela do celular.'
   },
   {
     label:'08 DE JULHO', title:'O CONVITE', subtitle:'QUASE UM MÊS DEPOIS.',
     art:'assets/08-convite-aprovado.png',
     music:'instagram',
-    text:'Depois de tantas conversas, Neneco resolveu fazer um convite. Na manhã seguinte, aquela história finalmente sairia das mensagens.'
+    text:'Depois de tantas conversas, Neneco resolveu fazer um convite. Na manhã seguinte, eles deixariam de ser apenas duas pessoas conversando por uma tela.'
   },
   {
     label:'09 DE JULHO · 06:00', title:'O PRIMEIRO ENCONTRO', subtitle:'UMA MANHÃ BEM FRIA.',
     art:'assets/09-01-primeiro-encontro-aprovado.png',
     music:'encontro',
-    text:'Às 06:00, em uma manhã bem fria, Neneco foi buscá-la na casa dela com o carro branco do pai. Era a primeira vez que os dois saíam juntos.'
+    text:'Às 06:00, em uma manhã bem fria, Neneco foi buscá-la na casa dela de carro. Era a primeira vez que os dois saíam juntos.'
   },
   {
     label:'09 DE JULHO', title:'A CAMINHO DO PARQUE', subtitle:'PARQUE CALDEIRA.',
     art:'assets/09-02-caminho-caldeira-aprovado.png',
     music:'encontro',
-    text:'O destino era o Parque Caldeira. No caminho, a conversa que já fluía pelas mensagens começava a ganhar voz, olhares e sorrisos.'
+    text:'O destino era o Parque Caldeira. No caminho, a conversa que já fluía tão naturalmente pelas mensagens agora ganhava voz, olhares e sorrisos tímidos. Entre uma palavra e outra, surgiam aqueles pequenos silêncios que diziam mais do que qualquer mensagem poderia dizer.'
   },
   {
     label:'09 DE JULHO', title:'PARQUE CALDEIRA', subtitle:'A PRIMEIRA MANHÃ JUNTOS.',
     art:'assets/09-03-caldeira-chegada-aprovado.png',
     music:'encontro',
-    text:'Eles chegaram ao Parque Caldeira, caminharam um pouco e aproveitaram aquela manhã que, sem eles saberem, ficaria marcada para sempre.'
+    text:'Eles chegaram ao Parque Caldeira e caminharam juntos naquela manhã fria. Entre conversas, sorrisos e olhares, sem perceber, começavam a escrever a primeira página da história dos dois.'
   },
   {
     label:'09 DE JULHO', title:'ANTES DA CORRIDA', subtitle:'HORA DE ALONGAR.',
     art:'assets/09-04-alongamento-aprovado.png',
     music:'encontro',
-    text:'Antes de correr, veio o alongamento. Tudo ainda era novo, mas estar ali juntos já parecia estranhamente natural.'
+    text:'Antes da corrida, veio o alongamento. Tudo ainda era novo, mas havia algo bonito na forma como, mesmo pela primeira vez, estar juntos já parecia tão natural.'
   },
   {
     label:'09 DE JULHO', title:'A CORRIDA', subtitle:'FINALMENTE, JUNTOS.',
     art:'assets/09-05-corrida-aprovado.png',
     music:'encontro',
-    text:'Depois de quase um mês conversando, finalmente veio a primeira corrida juntos. O que começou com um story agora acontecia lado a lado.'
+    text:'Depois de quase um mês de conversas, finalmente veio a primeira corrida juntos. O que começou com um simples story agora ganhava vida, lado a lado, entre passos, sorrisos e um sentimento que começava a encontrar seu caminho.'
   },
   {
     label:'09 DE JULHO', title:'MAIS CONVERSA', subtitle:'FORA DAS MENSAGENS.',
     art:'assets/09-06-conversa-banco-aprovado.png',
     music:'encontro',
-    text:'Depois da corrida, eles caminharam e conversaram ainda mais. Pela primeira vez, não havia uma tela entre os dois.'
+    text:'Depois da corrida, eles caminharam e deixaram a conversa seguir sem pressa. Pela primeira vez, não havia uma tela entre os dois. Apenas olhares, sorrisos e a vontade de fazer aquele momento durar um pouco mais.'
   },
   {
     label:'09 DE JULHO', title:'VIA SABOR', subtitle:'CAFÉ DA MANHÃ.',
     art:'assets/09-07-via-sabor-aprovado.png',
     music:'encontro',
-    text:'Depois do parque, eles foram tomar café na Via Sabor, a padaria favorita da Neneca. Café com leite, pão com ovo… e um pequeno detalhe que sempre rendia risadas.',
+    text:'Depois do parque, eles foram tomar café na Via Sabor, a padaria favorita da Neneca. Entre café com leite, pão com ovo e boas conversas, surgiu um pequeno detalhe… daqueles que parecem bobos no momento, mas que ainda renderiam muitas risadas entre os dois.',
     action:'COLOCAR 4 PACOTINHOS DE AÇÚCAR ☕'
   },
   {
     label:'MEMÓRIA DESBLOQUEADA', title:'QUATRO PACOTINHOS ☕', subtitle:'SIM. QUATRO. 😂',
     art:'assets/09-07-quatro-pacotinhos-aprovado.png',
     music:'encontro',
-    text:'Sim. Quatro pacotinhos. 😂 Neneca sempre achava graça na quantidade de açúcar que Neneco colocava no café com leite — e, como sempre, acabava rindo dele.'
+    text:'Sim… quatro pacotinhos. 😂 Neneca não conseguia entender como Neneco colocava tanto açúcar no café com leite — e, entre uma provocação e outra, acabava rindo dele. Um detalhe simples, mas que se tornaria uma daquelas pequenas lembranças que fazem uma história de amor ser só deles.'
   },
   {
     label:'09 DE JULHO', title:'UM PEQUENO GESTO', subtitle:'ANTES DE IR EMBORA...',
     art:'assets/09-08-um-pequeno-gesto-aprovado.png',
     music:'encontro',
-    text:'Depois do café, era hora de voltar. Mas antes de entrar no carro, havia um pequeno gesto que Neneco fazia questão de repetir.',
+    text:'Depois do café, era hora de voltar. Mas, antes de entrarem no carro, Neneco sempre encontrava um motivo para fazê-la esperar só mais um instante… havia um pequeno gesto que ele fazia questão de guardar para ela.',
     action:'ABRIR A PORTA 🚗❤️'
   },
   {
     label:'09 DE JULHO', title:'A VOLTA', subtitle:'HORA DE LEVÁ-LA PARA CASA.',
     art:'assets/09-08-volta-carro-branco-aprovado.png',
     music:'encontro',
-    text:'Neneco sempre abria a porta do carro para ela. Um gesto simples — e um daqueles que Neneca ama. ❤️ GESTO ROMÂNTICO DESBLOQUEADO — ABRIR A PORTA PARA A NENECA. A manhã estava chegando ao fim — mas ainda faltava um momento importante.'
+    text:'Neneco sempre fazia questão de abrir a porta do carro para ela. Um gesto simples, mas cheio de carinho. ❤️\n\n  (✨ GESTO ROMÂNTICO DESBLOQUEADO - ABRIR A PORTA PARA A NENECA.)  \n\nA manhã estava chegando ao fim… mas o momento mais especial daquele dia ainda estava por acontecer.'
   },
   {
     label:'09 DE JULHO', title:'UM POUCO DE CORAGEM', subtitle:'DENTRO DO CARRO.',
     art:'assets/09-09-coragem-carro-aprovado.png',
     music:'encontro',
-    text:'Já em frente à casa dela, Neneco criou coragem. Faltava só uma coisa antes daquele primeiro encontro terminar...',
+    text:'Já em frente à casa dela, Neneco criou coragem. A manhã estava chegando ao fim, mas ainda faltava um último momento… aquele que poderia mudar tudo entre os dois...❤️',
     action:'PEDIR UM BEIJO ❤️'
   },
   {
     label:'09 DE JULHO', title:'UM INSTANTE DE TIMIDEZ', subtitle:'ELA FICOU ENVERGONHADA.',
     art:'assets/09-09-neneca-envergonhada-aprovado.png',
     music:'encontro',
-    text:'Neneca ficou tímida e envergonhada. Por um instante, Neneco achou que era melhor desistir...'
+    text:'Neneca ficou tímida, o olhar entregando toda a vergonha daquele instante. Por um momento, Neneco pensou em desistir… talvez ainda não fosse a hora.'
   },
   {
     label:'09 DE JULHO', title:'O PRIMEIRO BEIJO', subtitle:'ELA NÃO DEIXOU ELE DESISTIR.',
     art:'assets/09-10-primeiro-beijo-aprovado.png',
     music:'encontro',
-    text:'Quando Neneco estava prestes a desistir, Neneca o puxou para perto. E foi assim que aconteceu o primeiro beijo.'
+    text:'Quando Neneco já estava prestes a desistir, Neneca o surpreendeu e o puxou para perto. E, naquele instante, entre a timidez e a coragem, aconteceu o primeiro beijo e começou, de verdade, a história dos dois. ❤️'
   },
   {
     label:'MEMÓRIA DESBLOQUEADA', title:'PRIMEIRO BEIJO ❤️', subtitle:'09 DE JULHO.',
@@ -169,287 +169,287 @@ const scenes = [
     label:'PRÓXIMO CAPÍTULO', title:'O NOSSO LUGAR', subtitle:'PARQUE CALDEIRA.',
     art:'assets/09-03-caldeira-chegada-aprovado.png',
     music:'caldeira',
-    text:'Aquele parque ainda voltaria muitas vezes para a história dos dois. Aos poucos, o Parque Caldeira deixaria de ser apenas um lugar.'
+    text:'Aquele parque ainda faria parte de muitos capítulos da história dos dois. Aos poucos, o Parque Caldeira deixaria de ser apenas um lugar para se tornar um pedacinho da história deles.'
   },
   {
     label:'ALGUM TEMPO DEPOIS', title:'DE VOLTA AO CALDEIRA', subtitle:'A PRIMEIRA CORRIDA ESTAVA LONGE DE SER A ÚLTIMA.',
     art:'assets/10-01-de-volta-ao-caldeira-aprovado.png',
     music:'caldeira',
-    text:'Depois daquele primeiro encontro, eles voltaram ao Parque Caldeira. E aquela primeira corrida estava longe de ser a última.'
+    text:'Depois daquele primeiro encontro, eles voltaram ao Parque Caldeira. E, entre passos, conversas e sorrisos, aquela primeira corrida começava a se transformar em uma história que os dois ainda correriam juntos por muitas vezes.'
   },
   {
     label:'O NOSSO LUGAR', title:'5 KM', subtitle:'LADO A LADO... QUASE 😅',
     art:'assets/10-02-5km-aprovado.png',
     music:'caldeira',
-    text:'Nos 5 km, Neneco quase sempre corria um pouco à frente. Não para deixá-la para trás... mas para fazê-la buscar um pouquinho mais.'
+    text:'Nos 5km, Neneco quase sempre corria alguns passos à frente. Não para deixá-la para trás… mas para fazê-la acreditar que sempre podia ir um pouquinho além, sabendo que ele estaria ali com ela. ❤️'
   },
   {
     label:'O NOSSO LUGAR', title:'DEPOIS DA CORRIDA', subtitle:'SEM PRESSA.',
     art:'assets/10-03-depois-da-corrida-aprovado.png',
     music:'caldeira',
-    text:'Depois dos quilômetros, vinha a melhor parte: diminuir o ritmo, caminhar e simplesmente aproveitar a companhia um do outro.'
+    text:'Depois dos quilômetros, vinha a melhor parte: desacelerar, caminhar lado a lado e aproveitar, sem pressa, aquilo que já começava a ser o motivo favorito dos dois para estarem ali: a companhia um do outro.'
   },
   {
     label:'O NOSSO LUGAR', title:'UMA PEQUENA TRADIÇÃO', subtitle:'ALGO COMEÇOU A SE REPETIR...',
     art:'assets/10-04-pegar-flor-aprovado.png',
     music:'caldeira',
-    text:'Até que uma coisa pequena começou a se repetir...',
+    text:'Até que um pequeno detalhe começou a se repetir… algo simples, quase sem importância, mas que, aos poucos, se tornaria mais uma daquelas coisinhas só deles. ❤️',
     action:'PEGAR A FLOR 🌼'
   },
   {
     label:'O NOSSO LUGAR', title:'PARA A NENECA', subtitle:'UMA FLORZINHA LARANJA.',
     art:'assets/10-05-para-neneca-aprovado.png',
     music:'caldeira',
-    text:'Sempre que encontrava uma, Neneco pegava a flor, se ajoelhava e entregava para Neneca. Uma brincadeira simples... que acabou virando tradição.'
+    text:'Sempre que encontrava uma flor pelo caminho, Neneco a pegava, se ajoelhava e a entregava para Neneca. O que começou como uma brincadeira simples acabou florescendo em uma pequena tradição só dos dois. 🌸❤️'
   },
   {
     label:'O NOSSO LUGAR', title:'MESMO QUANDO ELE NÃO ESTAVA LÁ', subtitle:'O CALDEIRA JÁ ERA DIFERENTE.',
     art:'assets/10-06-neneca-sozinha-aprovado.png',
     music:'caldeira',
-    text:'Às vezes, Neneca também corria ali sozinha. Mas aquele lugar já não parecia exatamente o mesmo. Porque, de algum jeito, correr por ali também fazia ela lembrar do Neneco.'
+    text:'Às vezes, Neneca também corria por ali sozinha. Mas aquele lugar já não era mais o mesmo. Porque, mesmo quando Neneco não estava ao seu lado, cada volta pelo parque carregava um pouquinho da história dos dois.'
   },
   {
     label:'MEMÓRIA DESBLOQUEADA', title:'O NOSSO LUGAR ❤️', subtitle:'PARQUE CALDEIRA.',
     art:'assets/10-07-nosso-lugar-aprovado.png',
     music:'caldeira',
-    text:'O lugar do primeiro encontro virou o lugar das corridas, das conversas e de uma pequena flor laranja. Até que o Parque Caldeira ganhou outro nome entre os dois... ❤️ O NOSSO LUGAR — DESBLOQUEADO'
+    text:'O lugar do primeiro encontro se tornou o lugar das corridas, das conversas e daquela pequena flor laranja. Até que, sem perceberem, o Parque Caldeira deixou de ser apenas um parque e ganhou um novo nome na história dos dois… ❤️ O NOSSO LUGAR — DESBLOQUEADO'
   },
   {
     label:'DEPOIS DISSO...', title:'OS PEQUENOS MOMENTOS', subtitle:'A HISTÓRIA CONTINUAVA SENDO ESCRITA.',
     art:'assets/11-01-pequenos-momentos.png',
     music:'rotina',
-    text:'Depois daquele começo, vieram outros encontros. Outros dias. E uma coleção de pequenos momentos que, aos poucos, foi se tornando parte da história dos dois.'
+    text:'Depois daquele começo, vieram novos encontros, novos dias e uma coleção de pequenos momentos que, quase sem perceber, começavam a transformar dois caminhos em uma só história.'
   },
   {
     label:'EM ALGUM DESSES ENCONTROS...', title:'UMA COISA VIROU COSTUME', subtitle:'UM JEITO DE CUIDAR. 😂',
     art:'assets/11-02-batatinha-antes.png',
     music:'rotina',
-    text:'Quando saíam para comer, Neneco tinha um jeito particular de dividir as batatinhas com a Neneca...',
+    text:'Quando saíam para comer, até dividir as batatinhas tinha um toque especial. Neneco tinha um jeitinho particular de dividir as batatinhas com a Neneca...🍟❤️',
     action:'FAZER AVIÃOZINHO 🍟✈️'
   },
   {
     label:'PEQUENOS MOMENTOS', title:'O AVIÃOZINHO 🍟✈️', subtitle:'ELA JÁ SABIA O QUE VINHA. 😂',
     art:'assets/11-03-batatinha-aviao.png',
     music:'rotina',
-    text:'Ela ficava com vergonha. Ele fazia mesmo assim. E, no fundo... ela adorava. 😂'
+    text:'Ela ficava toda envergonhada. Ele fazia mesmo assim. E, por mais que tentasse disfarçar entre risadas… no fundo, ela adorava aquele jeitinho dele. 😂❤️'
   },
   {
     label:'ENTRE UM ENCONTRO E OUTRO...', title:'REELS E BOBEIRAS', subtitle:'MESMO DE LONGE.',
     art:'assets/11-04-reel-antes.png',
     music:'rotina',
-    text:'Mesmo quando estavam longe, uma coisa sempre encontrava o caminho até o celular do outro: reels, bobeiras e coisas que tinham a cara da Neneca.',
-    action:'ENVIAR PRA NENECA 😂'
+    text:'Mesmo quando estavam longe, sempre havia um jeitinho de se fazerem presentes: reels, bobeiras e pequenas coisas que faziam Neneco pensar: “isso tem a cara da Neneca”.',
+    action:'ENVIAR REELS ENGRAÇADO PRA NENECA 😂'
   },
   {
     label:'PEQUENOS MOMENTOS', title:'UMA RISADA DO OUTRO LADO', subtitle:'A DISTÂNCIA NÃO IMPEDIA ISSO.',
     art:'assets/11-05-reels-distancia.png',
     music:'rotina',
-    text:'Em lugares diferentes, os dois acabavam dividindo a mesma risada. Mesmo à distância, continuavam fazendo parte do dia um do outro.'
+    text:'Mesmo em lugares diferentes, os dois encontravam um jeito de dividir a mesma risada. A distância podia separar os abraços, mas nunca impedia que continuassem presentes no dia um do outro. ❤️'
   },
   {
     label:'ENTRE UM ENCONTRO E OUTRO...', title:'UMA DECISÃO IMPORTANTÍSSIMA', subtitle:'NENECO, ESCOLHE A COR DO MEU ESMALTE?',
     art:'assets/11-06-esmalte-escolha.png',
     music:'rotina',
-    text:'Mesmo à distância, Neneco acabou ganhando uma responsabilidade muito importante...',
+    text:'Mesmo à distância, Neneco acabou ganhando uma missão muito especial… uma responsabilidade que Neneca fazia questão de deixar nas mãos dele.',
     choices:[
       {label:'🤍 BRANCO', value:'branco'},
-      {label:'🤎 MARROM / NUDE', value:'marrom/nude'}
+      {label:'🤎 MARROM', value:'marrom'}
     ]
   },
   {
     label:'MISSÃO CONCLUÍDA ✓', title:'COR DO ESMALTE ESCOLHIDA 😂', subtitle:'DECISÃO TOMADA.',
     art:'assets/11-06-esmalte-escolha.png',
     music:'rotina',
-    text:'Escolha registrada: {corEsmalte}. Mais uma pequena decisão da rotina dela que, mesmo de longe, passava pelo Neneco.'
+    text:'Escolha registrada: {corEsmalte}. 💅❤️ Mais uma pequena decisão do dia a dia da Neneca que, mesmo à distância, ela fazia questão de dividir com o Neneco.'
   },
   {
     label:'E QUANDO ESTAVAM JUNTOS...', title:'NEM TODOS OS GOSTOS ERAM IGUAIS 😂', subtitle:'PRINCIPALMENTE A PLAYLIST.',
     art:'assets/11-07-carro-musica.png',
     music:'rotina',
-    text:'Neneco gostava de rock. Neneca, de funk e sertanejo. E quando ela estava dirigindo... a escolha da música já tinha dona. 😂'
+    text:'Neneco gostava de rock. Neneca, de funk e sertanejo. Mas, quando ela estava ao volante, não havia discussão: a playlist tinha dona, e Neneco só aceitava o destino. 😂❤️'
   },
   {
     label:'EM UM DIA ESPECIAL...', title:'UMA SURPRESA', subtitle:'MESMO DE LONGE.',
     art:'assets/11-08a-aniversario-preparando.png',
     music:'rotina',
-    text:'No aniversário da Neneca, a distância significava que Neneco não poderia simplesmente aparecer por lá. Mas isso não significava que não poderia estar presente de algum jeito.',
+    text:'No aniversário da Neneca, a distância não deixava Neneco simplesmente aparecer por lá. Mas estar longe nunca significou estar ausente, e ele encontraria um jeito de se fazer presente naquele dia especial. ❤️',
     action:'ENVIAR UMA SURPRESA 🌻'
   },
   {
     label:'ANIVERSÁRIO DA NENECA', title:'UMA SURPRESA NO TRABALHO', subtitle:'GIRASSOL + BOMBONS. 🌻🍫',
     art:'assets/11-08b-aniversario-recebendo.png',
     music:'rotina',
-    text:'Naquele dia, Neneco não estava ali. Mas uma pequena surpresa chegou até ela. 🌻 GIRASSOL ADQUIRIDO.'
+    text:'Naquele dia, Neneco não podia estar ali pessoalmente. Mas encontrou um jeito de fazer seu carinho atravessar a distância e chegar até ela em forma de uma pequena surpresa.  🌻❤️GIRASSOL ADQUIRIDO.'
   },
   {
     label:'DEPOIS DE SAIR...', title:'O FIM DA NOITE', subtitle:'AINDA EXISTIA UMA ÚLTIMA PARADA.',
     art:'assets/11-09-buracao-chegada.png',
     music:'rotina',
-    text:'Depois de comer, muitas vezes ainda existia uma última parada. O Parque dos Pioneiros. Ou, como eles sempre chamavam... o Buracão.'
+    text:'Depois de comer, muitas vezes ainda havia uma última parada. O Parque dos Pioneiros, ou, como eles carinhosamente chamavam, o Buracão. Um lugar simples, mas que também começava a guardar um pedacinho da história dos dois.'
   },
   {
     label:'BURACÃO', title:'SEMPRE O MESMO', subtitle:'ENTRE TANTOS BANCOS...',
     art:'assets/11-10-banquinho-caminho.png',
     music:'rotina',
-    text:'E mesmo com tantos lugares para sentar... eles acabavam escolhendo sempre o mesmo.',
+    text:'E, mesmo com tantos lugares para sentar, eles sempre acabavam escolhendo o mesmo… como se, sem perceber, aquele cantinho já estivesse reservado para os dois.',
     action:'IR PARA O NOSSO BANQUINHO ❤️'
   },
   {
     label:'NOSSO BANQUINHO ❤️', title:'CONVERSAS SEM HORA PARA ACABAR', subtitle:'NO BURACÃO.',
     art:'assets/11-11-nosso-banquinho.png',
     music:'rotina',
-    text:'Ali eles conversavam sobre tudo. Sobre o dia. Sobre a vida. Sobre eles.'
+    text:'Ali, naquele cantinho que já parecia deles, conversavam sobre tudo. Sobre o dia, sobre a vida… e, aos poucos, cada vez mais sobre os dois.'
   },
   {
     label:'NOSSO BANQUINHO ❤️', title:'AS HORAS PASSAVAM', subtitle:'E NENHUM DOS DOIS TINHA PRESSA.',
     art:'assets/11-12-passagem-horas.png',
     music:'rotina',
-    text:'As horas passavam. Uma conversa puxava outra. Uma risada puxava outra. E nenhum dos dois parecia estar com muita pressa.',
+    text:'As horas passavam sem que percebessem. Uma conversa puxava outra, uma risada encontrava a próxima… e, quando se está com quem se quer estar, parece que nunca existe muita pressa para ir embora.',
     action:'FICAR SÓ MAIS UM POUQUINHO ❤️'
   },
   {
     label:'NOSSO BANQUINHO ❤️', title:'SÓ MAIS UM POUQUINHO', subtitle:'QUE QUASE NUNCA ERA SÓ UM POUQUINHO.',
     art:'assets/11-13-so-mais-um-pouquinho.png',
     music:'rotina',
-    text:'E “só mais um pouquinho” quase sempre virava mais uma conversa... mais uma risada... mais alguns minutos juntos.'
+    text:'E o “só mais um pouquinho” quase sempre virava mais uma conversa, mais uma risada… e mais alguns minutos juntos, porque ir embora nunca parecia tão fácil quando tudo o que queriam era ficar.'
   },
   {
     label:'MEMÓRIA DESBLOQUEADA', title:'NOSSO BANQUINHO ❤️', subtitle:'ONDE MUITAS NOITES DEMORAVAM A TERMINAR.',
     art:'assets/11-14-banquinho-final.png',
     music:'rotina',
-    text:'No fim, não era só um banco. Era onde muitas noites demoravam um pouco mais para terminar. ❤️ NOSSO BANQUINHO — MEMÓRIA DESBLOQUEADA.'
+    text:'No fim, já não era apenas um banco. Era o cantinho onde as conversas se prolongavam, as horas perdiam a importância e muitas noites demoravam um pouquinho mais para terminar.  ❤️ NOSSO BANQUINHO — MEMÓRIA DESBLOQUEADA.'
   },
   {
     label:'ALGUM TEMPO DEPOIS...', title:'UM CONVITE DIFERENTE', subtitle:'06 DE SETEMBRO.',
     art:'assets/12-01-convite-campeonato.webp',
-    text:'Entre um encontro e outro, as conversas continuavam. Até que Neneco contou que, no dia 06 de setembro, participaria como judge de um campeonato em Tupã — e convidou Neneca para ir com ele.',
+    text:'Entre um encontro e outro, as conversas nunca paravam. Até que Neneco contou que, no dia 06 de setembro, seria judge em um campeonato em Tupã e fez um convite que transformaria aquele dia em mais uma lembrança dos dois.',
     music:'setembro'
   },
   {
     label:'OS PLANOS', title:'UMA IDEIA DA NENECA', subtitle:'E SE A GENTE FOR NO SÁBADO?',
     art:'assets/12-02-plano-sabado.webp',
-    text:'O plano era ir no domingo bem cedo e voltar à noite, depois do campeonato. Mas Neneca teve uma ideia melhor: ir no sábado e dormir em Tupã.',
+    text:'O plano era ir no domingo bem cedo e voltar à noite, depois do campeonato. Mas Neneca teve uma ideia ainda melhor: por que esperar até domingo, se eles podiam ganhar algumas horas a mais juntos? Ir no sábado e dormir em Tupã parecia um plano bem melhor.',
     music:'setembro'
   },
   {
     label:'05 DE SETEMBRO', title:'RUMO A TUPÃ', subtitle:'DESSA VEZ, NENECA ESTAVA AO VOLANTE.',
     art:'assets/12-03-viagem-tupa.webp',
-    text:'E foi assim que os planos mudaram. No sábado, os dois partiram de Adamantina e seguiram juntos para Tupã. Dessa vez... Neneca estava ao volante. Estava frio. E ela estava toda de preto.',
+    text:'E foi assim que os planos mudaram. No sábado, os dois saíram de Adamantina e seguiram juntos para Tupã. Dessa vez, era Neneca quem estava ao volante, enfrentando o frio, enquanto os dois ganhavam algumas horas a mais juntos.',
     music:'setembro'
   },
   {
     label:'05 DE SETEMBRO', title:'CHEGANDO EM CASA', subtitle:'EM TUPÃ.',
     art:'assets/12-04-chegada-casa.webp',
-    text:'Quando chegaram a Tupã, foram para a casa do Neneco. E foi ali que aquela noite começou.',
+    text:'Quando chegaram a Tupã, foram para a casa do Neneco. E foi ali, longe da pressa e com a noite inteira pela frente, que começaria mais um capítulo especial da história dos dois.',
     music:'setembro'
   },
   {
     label:'05 DE SETEMBRO', title:'A PRIMEIRA NOITE JUNTOS', subtitle:'UMA NOITE DIFERENTE DE TODAS AS OUTRAS.',
     art:'assets/12-05-primeira-noite.webp',
-    text:'No sábado à noite, em Tupã... aquela noite acabou sendo diferente de todas as outras. Pela primeira vez, não havia pressa para voltar. Não havia uma despedida esperando no fim da noite. Naquela noite, os dois ficaram mais próximos do que nunca. Foi a primeira noite deles juntos.',
+    text:'Naquele sábado à noite, em Tupã, tudo parecia diferente. Pela primeira vez, não havia pressa para voltar, quilômetros pela frente ou uma despedida esperando no fim da noite. Havia apenas os dois, o tempo e a vontade de ficarem juntos. E, naquela noite, a conexão que já existia entre eles ganhou uma nova intimidade. Mais próximos do que nunca, Neneco e Neneca viveram a primeira noite juntos. ❤️',
     music:'setembro'
   },
   {
     label:'06 DE SETEMBRO', title:'A MANHÃ SEGUINTE', subtitle:'NENECO ACORDOU PRIMEIRO.',
     art:'assets/12-06-acordou-primeiro.webp',
-    text:'Na manhã seguinte, Neneco acordou primeiro. Pela primeira vez, o dia começou com os dois no mesmo lugar — enquanto Neneca ainda dormia ao lado dele.',
+    text:'Na manhã seguinte, Neneco acordou primeiro. E havia algo especial em abrir os olhos e perceber que, pela primeira vez, não existia distância entre eles. Neneca ainda dormia tranquilamente ao seu lado.',
     music:'setembro'
   },
   {
     label:'06 DE SETEMBRO', title:'ANTES DE COMEÇAR O DIA', subtitle:'SÓ MAIS ALGUNS MINUTOS.',
     art:'assets/12-07-admirando-neneca.webp',
-    text:'Por alguns instantes, Neneco só ficou ali, admirando Neneca dormir. Mas o domingo estava só começando.',
+    text:'Por alguns instantes, Neneco ficou ali, em silêncio, em pé, admirando Neneca dormir. Até que, diante de tamanha beleza, não conseguiu se conter e soltou um sonoro: “Caralho…” 😂❤️E ficou ali, admirando sua parceira e guardando aquele momento na memória. Mas o domingo estava apenas começando…',
     music:'setembro'
   },
   {
     label:'06 DE SETEMBRO', title:'CAMPEONATO EM TUPÃ', subtitle:'NENECO COMO JUDGE.',
     art:'assets/12-08-campeonato-judge.webp',
-    text:'No domingo, 06 de setembro, Neneco seria judge durante um campeonato inteiro. E Neneca estava lá. Na arquibancada. Assistindo. O dia foi longo. E cansativo.',
+    text:'No domingo, 06 de setembro, Neneco passaria o dia inteiro como judge no campeonato. E, mesmo em meio a um dia longo e cansativo, bastava olhar para a arquibancada para encontrar Neneca ali, assistindo e fazendo companhia do jeito dela.',
     music:'setembro'
   },
   {
     label:'06 DE SETEMBRO', title:'EM CADA INTERVALO', subtitle:'ELE VOLTAVA PARA ELA.',
     art:'assets/12-09-intervalo-arquibancada.webp',
-    text:'Mas, em cada intervalo que tinha... Neneco voltava para ficar um pouquinho com ela. Não era o rolê mais confortável do mundo para Neneca. Mesmo assim, ela ficou. E ali Neneco percebeu mais uma coisa: Neneca era parceira. Daquelas que ficam. ❤️',
+    text:'Mas, a cada intervalo que tinha, Neneco voltava para ficar um pouquinho com ela. Não era o rolê mais confortável do mundo para Neneca, e o dia parecia não ter fim. Mesmo assim, ela ficou. E foi ali que Neneco percebeu algo ainda mais especial: Neneca era parceira. Daquelas que estão ao seu lado, mesmo quando ficar é a parte mais difícil.',
     music:'setembro'
   },
   {
     label:'06 DE SETEMBRO', title:'DE VOLTA A ADAMANTINA', subtitle:'DEPOIS DE UM DIA INTENSO.',
     art:'assets/12-10-volta-adamantina.webp',
-    text:'Depois de um dia intenso, eles voltaram para Adamantina. Neneca novamente ao volante. E aquele fim de semana acabou deixando mais uma memória importante na história dos dois.',
+    text:'Depois de um dia intenso, era hora de voltar para Adamantina, com Neneca novamente ao volante. O fim de semana chegava ao fim, mas deixava para trás algo que ficaria: mais uma memória especial na história dos dois.',
     music:'setembro'
   },
   {
     label:'DEPOIS DE TUDO ISSO...', title:'UM NOVO PASSO', subtitle:'ALGUMAS COISAS PEDEM PARA EVOLUIR.',
     art:'assets/13-01-decisao-moto.webp',
-    text:'E depois de tudo que viveram juntos... Neneco percebeu que já não queria apenas esperar pelo próximo encontro. Ele queria continuar vivendo tudo aquilo. Só que agora... era hora de dar um novo passo.',
+    text:'E, depois de tudo o que viveram juntos, Neneco percebeu que já não queria apenas contar os dias para o próximo encontro. Queria continuar vivendo aquela história, criando novas memórias e tendo Neneca cada vez mais perto. Mas, para isso, estava na hora de dar um novo passo…',
     action:'PEGAR A ESTRADA 🏍️',
     music:'estrada'
   },
   {
     label:'UMA DECISÃO', title:'A ESTRADA', subtitle:'DESSA VEZ, O DESTINO ERA DIFERENTE.',
     art:'assets/13-02-estrada.webp',
-    text:'Então Neneco tomou uma decisão. E pegou a estrada.',
+    text:'Então, Neneco tomou uma decisão. Não queria mais esperar pelo próximo encontro para dizer o que sentia. Dessa vez, pegou a estrada com um propósito diferente…',
     music:'estrada'
   },
   {
     label:'ANTES DE CONTINUAR...', title:'O NOSSO LUGAR', subtitle:'PARQUE CALDEIRA.',
     art:'assets/13-03-caldeira-flor.png',
-    text:'Mas antes de continuar... Neneco precisava buscar uma coisa. Em um lugar que já tinha se tornado especial para os dois.',
+    text:'Mas, antes de continuar, Neneco precisava buscar algo. E sabia exatamente onde encontrar: em um lugar que já guardava tantos momentos da história dos dois…',
     action:'PEGAR A FLOR 🌼', flowerGain:true,
     music:'estrada'
   },
   {
     label:'COM A FLOR 🌼', title:'DE VOLTA À ESTRADA', subtitle:'AGORA FALTAVA SEGUIR.',
     art:'assets/13-04-estrada-com-flor.webp',
-    text:'Com a pequena flor laranja do Caldeira com ele, Neneco voltou para a estrada. Agora, havia algo muito especial esperando no fim daquele caminho.',
+    text:'Com a pequena flor laranja do Caldeira nas mãos, Neneco voltou para a estrada. Dessa vez, porém, cada quilômetro o aproximava de um momento que poderia mudar para sempre a história dos dois.',
     music:'estrada'
   },
   {
     label:'O CASTELO DA NENECA', title:'A CHEGADA', subtitle:'O FIM DA ESTRADA. O COMEÇO DE OUTRA COISA.',
     art:'assets/13-05-chegada-castelo.webp',
-    text:'No fim da estrada, o castelo apareceu. Neneco parou a moto, tirou o capacete e seguiu levando consigo a flor que tinha acabado de buscar no Caldeira.',
+    text:'No fim da estrada, o castelo finalmente apareceu. Neneco parou a moto, tirou o capacete e seguiu em frente, levando consigo a pequena flor laranja do Caldeira e a certeza de que aquele caminho o levaria ao momento mais importante da história dos dois.',
     action:'ENTRAR NO CASTELO 🏰',
     music:'castelo'
   },
   {
     label:'O CASTELO DA NENECA', title:'O CORREDOR DE MEMÓRIAS', subtitle:'ELAS JÁ ESTAVAM TODAS ALI.',
     art:'assets/13-06-corredor-memorias.webp',
-    text:'Lá dentro, Neneco encontrou um corredor cheio de memórias. O começo. A primeira corrida. O beijo. Os cafés. O Caldeira. Os momentos simples. Tudo o que os dois tinham vivido estava ali, acompanhando cada passo até a última porta.',
+    text:'Lá dentro, Neneco encontrou um corredor feito de memórias. O começo, a primeira corrida, o primeiro beijo, os cafés, o Caldeira, os pequenos momentos… cada lembrança parecia acompanhá-lo, passo a passo, até a última porta.',
     music:'castelo'
   },
   {
     label:'TODAS AS MEMÓRIAS', title:'A ÚLTIMA PORTA', subtitle:'AGORA ERA HORA DE CRIAR MAIS UMA.',
     art:'assets/13-07-ultima-porta.webp',
-    text:'Depois de atravessar um corredor cheio de memórias... estava na hora de criar mais uma. E essa seria muito especial. ❤️',
+    text:'Depois de atravessar um corredor repleto de memórias, Neneco chegou até a porta. Do outro lado, não havia uma lembrança esperando por ele… havia uma nova prestes a nascer. E talvez a mais especial de todas. ❤️',
     action:'❤️ ABRIR A ÚLTIMA PORTA',
     music:'castelo'
   },
   {
     label:'UMA NOVA FASE', title:'DO OUTRO LADO DA PORTA', subtitle:'AINDA FALTAVA UMA MEMÓRIA.',
     art:'assets/14-01-sala-final.png',
-    text:'No fim de todas aquelas memórias… ainda faltava uma.',
+    text:'No fim de todas aquelas memórias… havia alguém que tornava cada uma delas especial.',
     action:'❤️ CONTINUAR',
     music:'pedido'
   },
   {
     label:'UMA NOVA FASE', title:'A NENECA', subtitle:'ERA ELA.',
     art:'assets/14-02-neneca.png',
-    text:'…era ela.',
+    text:'…era ela ❤️',
     action:'❤️ IR ATÉ A NENECA',
     music:'pedido'
   },
   {
     label:'UMA NOVA FASE', title:'FRENTE A FRENTE', subtitle:'AGORA NÃO HAVIA MAIS DISTÂNCIA.',
     art:'assets/14-03-frente-a-frente.png',
-    text:'Eu não sei exatamente em qual momento percebi… mas desde o começo eu sabia que não queria que isso fosse algo passageiro.',
+    text:'Eu não sei dizer exatamente em que momento percebi… mas, desde o começo, havia uma certeza em mim: eu não queria que a nossa história fosse apenas algo passageiro. ❤️',
     action:'🌼 ENTREGAR A FLOR', flowerUse:true,
     music:'pedido'
   },
   {
     label:'UMA NOVA FASE', title:'NENECA…', subtitle:'❤️',
     art:'assets/14-04-pedido-flor.png',
-    text:'Porque algumas coisas pequenas… acabam significando muito. Neneca… quer ser minha namorada? ❤️',
+    text:'Porque, às vezes, são as coisas mais simples que acabam significando tudo. E, depois de cada momento, cada risada e cada memória ao seu lado, só existe uma coisa que eu ainda quero te perguntar… Neneca… quer namorar comigo? ❤️',
     action:'SIM ❤️', isYes:true,
     music:'pedido'
   },
@@ -462,7 +462,7 @@ const scenes = [
   {
     label:'EPÍLOGO', title:'É SÓ O COMEÇO ❤️', subtitle:'ESSA NÃO É A FASE FINAL.',
     art:'assets/15-01-epilogo.png',
-    text:'Ainda temos muitos quilômetros para correr. Muitos cafés para tomar. Muitas batatinhas para dividir. Muitas madrugadas no banquinho. Muitas flores para entregar. E muitas histórias para viver.',
+    text:'Ainda temos muitos quilômetros para correr, muitos cafés para tomar, muitas batatinhas para dividir, muitas madrugadas no nosso banquinho e muitas flores para entregar. Mas, acima de tudo, ainda temos uma vida inteira de histórias para viver juntos. ❤️',
     music:'pedido'
   },
   {
