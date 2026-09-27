@@ -164,3 +164,45 @@ html.mobile-game.portrait-mobile #game{visibility:hidden}
   /* A escala acima controla o mobile; anulamos apenas o dimensionamento destrutivo antigo. */
   html.mobile-game .stage{width:1100px;height:618.75px;border:2px solid #111c35}
 }
+
+/* Mobile landscape — menu inicial também cabe inteiro no viewport.
+   Não altera o palco/história já aprovado. */
+html.mobile-game:not(.portrait-mobile) .menu{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100dvh;
+  min-height:0;
+  overflow:hidden;
+  place-items:center;
+}
+html.mobile-game:not(.portrait-mobile) .menu-card{
+  width:min(920px,94vw);
+  max-height:calc(100dvh - 12px);
+  padding:10px 20px 8px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+html.mobile-game:not(.portrait-mobile) .menu .eyebrow{
+  font-size:clamp(7px,1.35vh,10px);
+  line-height:1.2;
+}
+html.mobile-game:not(.portrait-mobile) .menu h1{
+  font-size:clamp(28px,9.2vh,58px);
+  line-height:1.05;
+  margin:clamp(8px,2.4vh,16px) 0 clamp(6px,1.8vh,12px);
+  text-shadow:4px 4px 0 #401b44;
+}
+html.mobile-game:not(.portrait-mobile) .menu p{
+  margin:0;
+  font-size:clamp(7px,1.75vh,11px);
+  line-height:1.5;
+}
+html.mobile-game:not(.portrait-mobile) .menu .primary{
+  margin-top:clamp(10px,2.6vh,18px);
+  padding:clamp(9px,2.2vh,14px) 24px;
+  font-size:clamp(8px,1.7vh,11px);
+  flex:0 0 auto;
+}
