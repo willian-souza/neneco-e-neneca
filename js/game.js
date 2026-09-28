@@ -247,6 +247,30 @@ const scenes = [
     text:'Mesmo em lugares diferentes, os dois encontravam um jeito de dividir a mesma risada. A distância podia separar os abraços, mas nunca impedia que continuassem presentes no dia um do outro. ❤️'
   },
   {
+    label:'ENTRE UM ENCONTRO E OUTRO...', title:'UM PEQUENO GESTO', subtitle:'ALGUMAS FOTOS DIZIAM MAIS DO QUE PALAVRAS.',
+    art:'assets/11-05a-meio-coracao-neneco.png',
+    music:'rotina',
+    text:'E, entre tantas fotos que atravessavam aqueles quilômetros, algumas começaram a carregar um pequeno gesto que só precisava de uma mão…'
+  },
+  {
+    label:'PEQUENOS MOMENTOS', title:'A METADE DO NENECO', subtitle:'UM GESTO QUE VIROU COSTUME.',
+    art:'assets/11-05a-meio-coracao-neneco.png',
+    music:'rotina',
+    text:'Neneco mandava a sua metade…'
+  },
+  {
+    label:'PEQUENOS MOMENTOS', title:'A OUTRA METADE', subtitle:'ELA SABIA EXATAMENTE O QUE FALTAVA.',
+    art:'assets/11-05b-meio-coracao-neneca.png',
+    music:'rotina',
+    text:'…e Neneca sabia exatamente como completar. ❤️'
+  },
+  {
+    label:'MEMÓRIA DESBLOQUEADA', title:'CORAÇÃO COMPLETO ❤️', subtitle:'MESMO DE LONGE, ELES SE COMPLETAVAM.',
+    art:'assets/11-05c-coracao-completo.png',
+    music:'rotina',
+    text:'Porque, mesmo quando a distância colocava cada um de um lado… eles sempre encontravam um jeito de se completar. ❤️  CORAÇÃO COMPLETO — MEMÓRIA DESBLOQUEADA.'
+  },
+  {
     label:'ENTRE UM ENCONTRO E OUTRO...', title:'UMA DECISÃO IMPORTANTÍSSIMA', subtitle:'NENECO, ESCOLHE A COR DO MEU ESMALTE?',
     art:'assets/11-06-esmalte-escolha.png',
     music:'rotina',
@@ -358,7 +382,7 @@ const scenes = [
   {
     label:'06 DE SETEMBRO', title:'ANTES DE COMEÇAR O DIA', subtitle:'SÓ MAIS ALGUNS MINUTOS.',
     art:'assets/12-07-admirando-neneca.webp',
-    text:'Por alguns instantes, Neneco ficou ali, em silêncio, em pé, admirando Neneca dormir. Até que, diante de tamanha beleza, não conseguiu se conter e soltou um sonoro: “Caralho…” 😂❤️E ficou ali, admirando sua parceira e guardando aquele momento na memória. Mas o domingo estava apenas começando…',
+    text:'Por alguns instantes, Neneco ficou ali, em silêncio, em pé, admirando Neneca dormir. Até que, diante de tamanha beleza, não conseguiu se conter e soltou um sonoro: “Caralho…” 😂❤️ E ficou ali, admirando sua parceira e guardando aquele momento na memória. Mas o domingo estava apenas começando…',
     music:'setembro'
   },
   {
