@@ -211,3 +211,26 @@ html.mobile-game:not(.portrait-mobile) .menu .primary{
 .sound-toggle{position:absolute;z-index:20;right:18px;top:18px;padding:10px 12px;border:2px solid var(--line);background:#06101fe8;color:#dff6ff;font:inherit;font-size:8px;cursor:pointer;box-shadow:4px 4px 0 #0008,0 0 18px #46c8ff22}
 .sound-toggle:hover{background:#101c2e}.sound-toggle:active{transform:translateY(2px)}.sound-toggle[hidden]{display:none}
 html.mobile-game .sound-toggle{right:18px;top:18px;font-size:8px;padding:10px 12px}
+
+
+/* Navegação — voltar uma cena sem reiniciar a história. */
+.back-scene{
+  position:absolute;
+  z-index:15;
+  left:18px;
+  bottom:14px;
+  padding:5px 7px;
+  border:0;
+  background:transparent;
+  color:#9edcff;
+  font:inherit;
+  font-size:6px;
+  line-height:1;
+  cursor:pointer;
+  opacity:.78;
+  text-shadow:2px 2px 0 #000;
+}
+.back-scene:hover{color:var(--gold);opacity:1}
+.back-scene:active{transform:translateY(1px)}
+.back-scene[hidden]{display:none}
+html.mobile-game .back-scene{left:18px;bottom:14px;font-size:6px;padding:5px 7px}

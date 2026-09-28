@@ -382,7 +382,7 @@ const scenes = [
   {
     label:'06 DE SETEMBRO', title:'ANTES DE COMEÇAR O DIA', subtitle:'SÓ MAIS ALGUNS MINUTOS.',
     art:'assets/12-07-admirando-neneca.webp',
-    text:'Por alguns instantes, Neneco ficou ali, em silêncio, em pé, admirando Neneca dormir. Até que, diante de tamanha beleza, não conseguiu se conter e soltou um sonoro: “Caralho…” 😂❤️ E ficou ali, admirando sua parceira e guardando aquele momento na memória. Mas o domingo estava apenas começando…',
+    text:'Por alguns instantes, Neneco ficou ali, em silêncio, em pé, admirando Neneca dormir. Até que, diante de tamanha beleza, não conseguiu se conter e soltou um sonoro: “Caralho…” 😂❤️E ficou ali, admirando sua parceira e guardando aquele momento na memória. Mas o domingo estava apenas começando…',
     music:'setembro'
   },
   {
@@ -500,8 +500,14 @@ const scenes = [
 ];
 
 let index=0,locked=false,actionRequired=false;
-const menu=document.querySelector('#menu'),story=document.querySelector('#story'),stage=document.querySelector('.stage'),art=document.querySelector('#sceneArt'),hud=document.querySelector('.chapter-hud'),label=document.querySelector('#chapterLabel'),title=document.querySelector('#chapterTitle'),subtitle=document.querySelector('#chapterSubtitle'),narration=document.querySelector('#narrationText'),progress=document.querySelector('#progressBar'),tap=document.querySelector('.tap');
+const menu=document.querySelector('#menu'),story=document.querySelector('#story'),stage=document.querySelector('.stage'),art=document.querySelector('#sceneArt'),hud=document.querySelector('.chapter-hud'),label=document.querySelector('#chapterLabel'),title=document.querySelector('#chapterTitle'),subtitle=document.querySelector('#chapterSubtitle'),narration=document.querySelector('#narrationText'),progress=document.querySelector('#progressBar'),tap=document.querySelector('.tap'),backBtn=document.querySelector('#backBtn');
 let corEsmalte='';
+// Histórico de navegação. Cada entrada guarda o estado exatamente como ele era
+// ao entrar na cena, permitindo voltar inclusive através de escolhas/interações.
+let sceneHistory=[];
+function snapshotState(){return {index,flowerCount,corEsmalte};}
+function resetHistory(){sceneHistory=[snapshotState()];}
+function refreshBackButton(){backBtn.hidden=sceneHistory.length<=1;}
 
 // Trilha sonora original — acompanha a história inteira.
 const musicTracks={
@@ -568,7 +574,7 @@ const actionBtn=document.createElement('button'); actionBtn.className='scene-act
 const choicesBox=document.createElement('div'); choicesBox.className='scene-choices'; choicesBox.hidden=true; stage.appendChild(choicesBox);
 const journeyHud=document.createElement('div'); journeyHud.className='journey-hud'; journeyHud.hidden=true; stage.appendChild(journeyHud);
 const obstacleWord=document.createElement('div'); obstacleWord.className='obstacle-word'; obstacleWord.hidden=true; stage.appendChild(obstacleWord);
-actionBtn.addEventListener('click',e=>{e.stopPropagation(); if(locked)return; const s=scenes[index]; if(s.flowerGain){flowerCount=1;updateInventory();} if(s.flowerUse){flowerCount=0;updateInventory();} if(s.replay){index=0;flowerCount=0;corEsmalte='';updateInventory();render(0);return;} actionRequired=false; actionBtn.hidden=true; next();});
+actionBtn.addEventListener('click',e=>{e.stopPropagation(); if(locked)return; const s=scenes[index]; if(s.flowerGain){flowerCount=1;updateInventory();} if(s.flowerUse){flowerCount=0;updateInventory();} if(s.replay){index=0;flowerCount=0;corEsmalte='';updateInventory();resetHistory();render(0);return;} actionRequired=false; actionBtn.hidden=true; next();});
 function choose(value){
   corEsmalte=value; actionRequired=false; choicesBox.hidden=true; next();
 }
@@ -613,26 +619,50 @@ async function render(i){
     s.choices.forEach(c=>{const b=document.createElement('button');b.type='button';b.textContent=c.label;b.addEventListener('click',e=>{e.stopPropagation();if(!locked)choose(c.value)});choicesBox.appendChild(b)});
   }
   tap.textContent=actionRequired?(s.choices?'ESCOLHA UMA COR':'ESCOLHA UMA AÇÃO'):'TOQUE PARA CONTINUAR';
-  progress.style.width=`${((i+1)/scenes.length)*100}%`; stage.classList.add('fade');
+  progress.style.width=`${((i+1)/scenes.length)*100}%`;
+  refreshBackButton();
+  stage.classList.add('fade');
   // Enquanto a pessoa lê esta cena, prepara as próximas em segundo plano.
   warmNextImages(i+1,5);
   setTimeout(()=>locked=false,280);
 }
 function next(){
   if(locked||actionRequired)return;
-  if(index<scenes.length-1){index++;render(index);return;}
+  if(index<scenes.length-1){
+    index++;
+    sceneHistory.push(snapshotState());
+    render(index);
+    return;
+  }
+}
+function previous(){
+  if(locked||sceneHistory.length<=1)return;
+  // Descarta o estado da cena atual e restaura exatamente o estado
+  // registrado ao entrar na cena anterior.
+  sceneHistory.pop();
+  const prev=sceneHistory[sceneHistory.length-1];
+  index=prev.index;
+  flowerCount=prev.flowerCount;
+  corEsmalte=prev.corEsmalte;
+  updateInventory();
+  render(index);
 }
 document.querySelector('#startBtn').addEventListener('click',async()=>{
   unlockAudio();
   setMusic(scenes[0].music||'');
   locked=true;
   await preloadImage(scenes[0].art);
-  menu.classList.remove('active'); story.classList.add('active'); index=0; render(0);
+  menu.classList.remove('active'); story.classList.add('active');
+  index=0; flowerCount=0; corEsmalte=''; updateInventory(); resetHistory(); render(0);
 });
 // Já na tela de abertura, prepara o começo da história sem esperar o jogador clicar.
 warmNextImages(0,6);
+backBtn.addEventListener('click',e=>{e.stopPropagation();previous();});
 story.addEventListener('click',next);
-story.addEventListener('keydown',e=>{if(['Enter',' ','ArrowRight'].includes(e.key)){e.preventDefault();next()}});
+story.addEventListener('keydown',e=>{
+  if(['Enter',' ','ArrowRight'].includes(e.key)){e.preventDefault();next();return;}
+  if(e.key==='ArrowLeft'){e.preventDefault();previous();}
+});
 
 
 // Mobile: preserva o jogo como um palco 16:9 e escala o conjunto inteiro.
